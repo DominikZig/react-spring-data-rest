@@ -11,7 +11,7 @@ Prerequisites:
 
 Then, in the command line, navigate to where you cloned the project and do: 
 ````
-mvn:spring-boot:run
+mvnw:spring-boot:run
 ````
 
 After running this command, navigate to localhost:8080
