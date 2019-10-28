@@ -5,6 +5,11 @@ module.exports = {
     devtool: 'sourcemaps',
     cache: true,
     mode: 'development',
+    resolve: {
+        alias: {
+            'stompjs': __dirname + '/node_modules' + '/stompjs/lib/stomp.js',
+        }
+    },
     output: {
         path: __dirname,
         filename: './src/main/resources/static/built/bundle.js' //bundle.js is essentially a Spring Boot uber JAR, basically all js code and dependencies are stored in it
