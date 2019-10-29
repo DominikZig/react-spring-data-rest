@@ -17,6 +17,6 @@ public interface EmployeeRepository extends PagingAndSortingRepository<Employee,
     void deleteById(@Param("id") Long id);
 
     @Override
-    @PreAuthorize("#employee?.manager.name == authentication?.name")
+    @PreAuthorize("#employee?.manager?.name == authentication?.name")
     void delete(@Param("employee") Employee employee);
 }

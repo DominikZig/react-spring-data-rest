@@ -15,8 +15,7 @@ public class Manager
 {
    public static final PasswordEncoder PASSWORD_ENCODER = new BCryptPasswordEncoder();
 
-   private @Id
-   @GeneratedValue Long id;
+   private @Id @GeneratedValue Long id;
 
    private String name;
 
@@ -106,7 +105,6 @@ public class Manager
         return "Manager{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
                 ", roles=" + Arrays.toString(roles) +
                 '}';
     }
